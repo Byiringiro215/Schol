@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Newschol</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#18141d] min-h-screen flex items-center justify-center">
+  <div class="relative flex w-[700px] h-[400px] rounded-lg border-2 border-purple-600 shadow-[0_0_30px_5px_rgba(168,85,247,0.5)] overflow-hidden">
+    <!-- Left: Login Form -->
+    <div class="w-1/2 bg-[#18141d] px-10 py-8 flex flex-col justify-center">
+      <h2 class="text-3xl font-bold text-white mb-8">Login</h2>
+      <form class="space-y-6">
+        <div>
+          <label for="username" class="block text-sm font-medium text-gray-300 mb-1">Username</label>
+          <div class="flex items-center border-b border-gray-400 focus-within:border-purple-500">
+            <input type="text" id="username" name="username" required placeholder="Username"
+              class="bg-transparent outline-none w-full text-white py-2 placeholder-gray-400" />
+            <svg class="w-5 h-5 text-gray-400 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+          </div>
+        </div>
+        <div>
+          <label for="password" class="block text-sm font-medium text-gray-300 mb-1">Password</label>
+          <div class="flex items-center border-b border-gray-400 focus-within:border-purple-500">
+            <input type="password" id="password" name="password" required placeholder="Password"
+              class="bg-transparent outline-none w-full text-white py-2 placeholder-gray-400" />
+            <svg class="w-5 h-5 text-gray-400 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 11c1.657 0 3 1.343 3 3v1H9v-1c0-1.657 1.343-3 3-3z" /><path stroke-linecap="round" stroke-linejoin="round" d="M17 11V7a5 5 0 00-10 0v4" /></svg>
+          </div>
+        </div>
+        <button type="submit" class="w-full py-2 rounded-full bg-gradient-to-r from-purple-500 to-purple-700 text-white font-semibold shadow-md hover:from-purple-600 hover:to-purple-800 transition-all">Login</button>
+      </form>
+      <div class="mt-4 text-sm text-gray-300">
+        Dont have an account? <a href="#" class="text-purple-400 hover:underline">Sign Up</a>
+      </div>
+    </div>
+    <!-- Right: Welcome Message -->
+    <div class="w-1/2 relative flex flex-col justify-center items-center text-center bg-gradient-to-tr from-[#6d28d9] to-[#a21caf]">
+      <div class="absolute left-0 top-0 w-0 h-0 border-t-[400px] border-t-transparent border-l-[200px] border-l-[#18141d] border-b-[0px] border-b-transparent"></div>
+      <div class="relative z-10 px-6">
+        <h2 class="text-3xl font-extrabold text-white mb-2">WELCOME<br>BACK!</h2>
+        <p class="text-gray-200 text-base">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+      </div>
+    </div>
+    <!-- Neon Glow -->
+    <div class="absolute inset-0 pointer-events-none rounded-lg border-2 border-purple-600 shadow-[0_0_30px_5px_rgba(168,85,247,0.7)]"></div>
+  </div>
+</body>
+</html> 
