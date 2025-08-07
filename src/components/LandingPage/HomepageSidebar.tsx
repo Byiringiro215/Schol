@@ -3,7 +3,7 @@ import React from 'react'
 import clsx from 'clsx'
 import Link from 'next/link';
 import { XMarkIcon } from '@heroicons/react/24/outline';
-import { useSidebar } from './Providers/Providers';
+import { useSidebar } from '@/Providers/Providers'; 
 interface SidebarLinks{
     link:string,
     href:string,

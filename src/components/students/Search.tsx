@@ -1,6 +1,6 @@
 import React from 'react'
 import { MagnifyingGlassIcon} from '@heroicons/react/24/outline';
-import { useSearch } from '@/DashboardComponents/DashboardProviders/UseSearchProvider';
+import { useSearch } from '@/Providers/DashboardProviders/UseSearchProvider';
 
 const Search = () => {
   const {

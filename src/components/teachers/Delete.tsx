@@ -1,9 +1,9 @@
 'use client'
 import React from 'react'
 import { X } from 'lucide-react'
-import { useViewTeacherProfile } from '@/DashboardComponents/DashboardProviders/ViewTeacherProfileProvider'
+import { useViewTeacherProfile } from '@/Providers/DashboardProviders/ViewTeacherProfileProvider'
 import { useRouter } from 'next/navigation'
-import { useDeleteUpdate } from '@/DashboardComponents/DashboardProviders/Delete_Add_Provider'
+import { useDeleteUpdate } from '@/Providers/DashboardProviders/Delete_Add_Provider'
 
 interface Delete_UpdateProps {
   category?: string;

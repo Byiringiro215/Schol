@@ -1,19 +1,19 @@
 'use client'
 import React, { useState } from 'react'
-import NoStudent from './NoStudent'
-import Addstudent from '../../../DashboardComponents/Addstudent'
-import { useAddStudent } from '@/DashboardComponents/DashboardProviders/DashboardProvider'
+import NoStudent from '@/components/students/NoStudent'
+import Addstudent from '../../../components/Dashboard/Addstudent'
+import { useAddStudent } from '@/Providers/DashboardProviders/DashboardProvider'
 
-import DisplayStudents from './DisplayStudents'
-import Search from './Search'
-import Filter_Searchbar from '@/DashboardComponents/Filter&Searchbar'
-import AddStudentPage from '@/DashboardComponents/AddStudentPage'
+import DisplayStudents from '@/components/students/DisplayStudents'
+import Search from '@/components/students/Search'
+import Filter_Searchbar from '@/components/Dashboard/Filter&Searchbar'
+import AddStudentPage from '@/components/Dashboard/AddStudentPage'
 
 const page = () => {
   const { showAddStudent, handleClick } = useAddStudent();
 
   return (
-    <div className='mt-[10rem] px-5'>
+    <div className=' px-5'>
       <div className='flex justify-between w-full my-3'>
         <h1 className='font-bold text-2xl'>Students</h1>
         <div className='flex gap-2 text-sm'>

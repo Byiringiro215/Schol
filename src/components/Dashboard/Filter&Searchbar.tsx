@@ -1,6 +1,6 @@
 import React from 'react'
-import Search from '@/app/dashboard/students/Search' 
-import { useSearch } from './DashboardProviders/UseSearchProvider';
+import Search from '../students/Search';
+import { useSearch } from '@/Providers/DashboardProviders/UseSearchProvider';
 
 const Filter_Searchbar = () => {
   const {

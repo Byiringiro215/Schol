@@ -1,5 +1,5 @@
 import React from 'react'
-import Breadcrumbs from '@/DashboardComponents/Breadcrumbs'
+import Breadcrumbs from '@/components/Dashboard/Breadcrumbs'
 import {
     UserPlusIcon,
     BuildingLibraryIcon,
