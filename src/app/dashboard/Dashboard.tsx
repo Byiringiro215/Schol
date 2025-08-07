@@ -2,12 +2,13 @@
 
 import { ArrowDownCircleIcon, ArrowUpCircleIcon, BarChart3, DotIcon, DotSquare, EllipsisVertical, Lock, OptionIcon, Pencil, Trash, User, Users } from 'lucide-react'
 import React from 'react'
-import { CardContents,schools } from './DashboardContents'
+import { CardContents,schools } from '@/data/DashboardContents'
+import { ArrowUpCircle } from 'lucide-react'
 import Link from 'next/link'
 import clsx from 'clsx'
 import dynamic from 'next/dynamic'
 
-const Chart = dynamic(() => import('./Chart'), { ssr: false })
+const Chart = dynamic(() => import('@/components/Dashboard/Chart'), { ssr: false })
 
 const Dashboard = () => {
   const data = [
@@ -19,7 +20,7 @@ const Dashboard = () => {
     { year: '2020', approved: 45, submitted: 33 },
   ];
   return (
-    <div className='mt-[6rem] p-10 flex flex-col gap-8'>
+    <div className=' p-10 flex flex-col gap-8'>
       <div className='flex justify-between items-center'>
         <div>
             <h5 className='font-bold text-lg'>Welcome Back!</h5>
@@ -30,9 +31,9 @@ const Dashboard = () => {
             Add new Admission
         </button>
       </div>
-      <div className='flex justify-between '>
+      <div className='flex justify-between gap-4'>
         {CardContents.map((cardContent,index)=>(
-          <div className='flex flex-col rounded-2xl border border-blue-500 py-4 px-8'>
+          <div className='flex flex-col rounded-2xl border border-blue-500 py-4 px-8' key={index}>
             <div className='flex justify-between'>
               <span className='text-sm text-[#848484]'>{cardContent.title}</span>
               <span>{cardContent.icon}</span>

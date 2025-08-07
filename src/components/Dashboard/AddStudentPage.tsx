@@ -1,5 +1,5 @@
 import React from 'react'
-import { useAddStudent } from './DashboardProviders/DashboardProvider'
+import { useAddStudent } from '@/Providers/DashboardProviders/DashboardProvider'
 import { XMarkIcon } from '@heroicons/react/16/solid'
 import Addstudent from './Addstudent'
 interface AddStudentProps {

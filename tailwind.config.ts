@@ -4,6 +4,9 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx}",
     "./src/LandingPageComponents/**/*.{js,ts,jsx,tsx}",
     "./src/DashboardComponents/**/*.{js,ts,jsx,tsx}",
+    "./src/components/**/*.{js,ts,jsx,tsx}",
+    "./src/components/LandingPage/**/*.{js,ts,jsx,tsx}",
+    "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {

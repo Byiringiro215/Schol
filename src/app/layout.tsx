@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Poppins, Potta_One } from "next/font/google";
 import "./globals.css";
-import { SideBarProvider } from "@/LandingPageComponents/Providers/Providers";
+import { SideBarProvider } from "@/Providers/Providers";
 import { Toaster } from "react-hot-toast";
-import { AddStudentProvider } from "@/DashboardComponents/DashboardProviders/DashboardProvider";
-import { ViewTeacherProfileProvider } from "@/DashboardComponents/DashboardProviders/ViewTeacherProfileProvider";
-import { UseSearchProvider } from "@/DashboardComponents/DashboardProviders/UseSearchProvider";
-import { Delete_Add_Provider } from "@/DashboardComponents/DashboardProviders/Delete_Add_Provider";
+import { AddStudentProvider } from "@/Providers/DashboardProviders/DashboardProvider";
+import { ViewTeacherProfileProvider } from "@/Providers/DashboardProviders/ViewTeacherProfileProvider";
+import { UseSearchProvider } from "@/Providers/DashboardProviders/UseSearchProvider";
+import { Delete_Add_Provider } from "@/Providers/DashboardProviders/Delete_Add_Provider";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -37,7 +37,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} `}>
+      <body className={`${poppins.className}`}>
         <Toaster  position="top-right" reverseOrder={false} />
         <SideBarProvider>
         <UseSearchProvider>

@@ -1,10 +1,10 @@
-import Breadcrumbs from '@/DashboardComponents/Breadcrumbs'
+import Breadcrumbs from '@/components/Dashboard/Breadcrumbs'
 import { ArrowLeftIcon } from 'lucide-react'
 import React from 'react'
 
 const page = () => {
   return (
-    <div className='mt-[8rem] px-8'>
+    <div className=' px-8'>
       <div className='flex items-center pl-5 bg-[#D9D9D9] rounded-full w-[30rem] h-[3rem]'>
       <p className='flex items-center cursor-pointer'>
         <ArrowLeftIcon className='h-4'/>

@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import { Eye, Trash2,ExternalLink, Pencil, PencilOff, LucidePencilLine } from 'lucide-react';
-import { teacherslist } from './Teacherslist';
+import { teacherslist } from '@/data/Teacherslist';
 import NoStudent from '../students/NoStudent';
 import { useRouter } from 'next/navigation';
-import { useViewTeacherProfile } from '@/DashboardComponents/DashboardProviders/ViewTeacherProfileProvider';
+import { useViewTeacherProfile } from '@/Providers/DashboardProviders/ViewTeacherProfileProvider';
 import Delete from './Delete';
-import { useSearch } from '@/DashboardComponents/DashboardProviders/UseSearchProvider';
+import { useSearch } from '@/Providers/DashboardProviders/UseSearchProvider';
 
 const DisplayTeachers = () => {
   const {handleView, selectedTeacher, showDelete, handleDelete, showUpdate, handleUpdate} = useViewTeacherProfile();

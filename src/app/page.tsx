@@ -1,21 +1,21 @@
 'use client'
 import Image from "next/image";
-import Logo from "../LandingPageComponents/Logo";
-import Navlinks from "../LandingPageComponents/navlinks";
-import Getstartedbtn from "../LandingPageComponents/Getstartedbtn";
-import Herosection from "../LandingPageComponents/Herosection";
-import Schools from "../LandingPageComponents/Schools";
-import Premiumpackage from "../LandingPageComponents/Premiumpackage";
-import Features from "../LandingPageComponents/Features";
-import Testimonies from "../LandingPageComponents/Testimonies";
-import Accordion from "../LandingPageComponents/FQA";
-import Subscribe from "../LandingPageComponents/Subscribe";
-import Footer from "../LandingPageComponents/Footer";
-import Sidebar from "@/DashboardComponents/Sidebar";
-import HomepageSidebar from "@/LandingPageComponents/HomepageSidebar";
+import Logo from "@/components/LandingPage/Logo";
+import Navlinks from "@/components/LandingPage/navlinks";
+import Getstartedbtn from "@/components/LandingPage/Getstartedbtn";
+import Herosection from "@/components/LandingPage/Herosection";
+import Schools from "@/components/LandingPage/Schools";
+import Premiumpackage from "@/components/LandingPage/Premiumpackage";
+import Features from "@/components/LandingPage/Features";
+import Testimonies from "@/components/LandingPage/Testimonies";
+import Accordion from "@/components/LandingPage/FQA";
+import Subscribe from "@/components/LandingPage/Subscribe";
+import Footer from "@/components/LandingPage/Footer";
+import Sidebar from "@/components/Dashboard/Sidebar";
+import HomepageSidebar from "@/components/LandingPage/HomepageSidebar";
 import { Menu } from "lucide-react";
 import { useState, useEffect } from "react";
-import { useSidebar } from "@/LandingPageComponents/Providers/Providers";
+import { useSidebar } from "@/Providers/Providers";
 
 export default function Home() {
   const { toggleSidebar } = useSidebar();

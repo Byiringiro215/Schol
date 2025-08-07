@@ -1,7 +1,7 @@
 'use client'
 
 import React, { ReactNode, createContext, useContext, useState } from 'react'
-import { teacherslist as initialTeachers } from '@/app/dashboard/teachers/Teacherslist'
+import { teacherslist as initialTeachers } from '@/data/Teacherslist'
 import { useRouter } from 'next/navigation'
 import { useViewTeacherProfile } from './ViewTeacherProfileProvider';
 import toast from 'react-hot-toast';

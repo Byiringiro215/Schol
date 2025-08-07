@@ -9,8 +9,8 @@ import React, {
   SetStateAction,
   useEffect
 } from 'react';
-import { teacherslist } from '@/app/dashboard/teachers/Teacherslist';
-import { studentList } from '@/app/dashboard/students/studentslist';
+import { teacherslist } from '@/data/Teacherslist';
+import { studentList } from '@/data/studentslist';
 
 interface UseSearchContextProps {
   searchTerm: string;

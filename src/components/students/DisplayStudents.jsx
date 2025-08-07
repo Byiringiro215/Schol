@@ -1,10 +1,10 @@
 'use client'
 import React, { useState } from 'react';
-import { studentList } from './studentslist';
+import { studentList } from '@/data/studentslist';
 import { Phone } from 'lucide-react';
 import { AcademicCapIcon, EnvelopeIcon } from '@heroicons/react/24/solid';
 import NoStudent from './NoStudent';
-import { useSearch } from '@/DashboardComponents/DashboardProviders/UseSearchProvider';
+import { useSearch } from '@/Providers/DashboardProviders/UseSearchProvider';
 
 const DisplayStudents = () => {
   const [selectedStudent, setSelectedStudent] = useState(studentList[0]);

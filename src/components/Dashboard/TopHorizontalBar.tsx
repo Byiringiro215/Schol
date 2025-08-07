@@ -4,7 +4,7 @@ import { MagnifyingGlassIcon, BellIcon, ChatBubbleLeftEllipsisIcon, ChevronDownI
 import { useState } from 'react';
 import { ArrowBigRightIcon} from 'lucide-react';
 import Link from 'next/link';
-import Search from '@/app/dashboard/students/Search';
+import Search from '../students/Search';
 import toast from 'react-hot-toast';
 import { useRouter } from 'next/navigation';
 
@@ -17,7 +17,7 @@ const TopHorizontalBar = () => {
       router.push('/');
     }
   return (
-    <div className='fixed w-full z-20 shadow-md flex justify-evenly items-center h-[6rem] px-10 bg-white'>
+    <div className='fixed w-full z-20 shadow-md flex justify-evenly items-center py-4 px-10 bg-white'>
       
     <Search/>
       
@@ -34,10 +34,11 @@ const TopHorizontalBar = () => {
     <div className='h-7 w-7 py-1 px-[3px] cursor-pointer rounded-full border border-gray-200 text-gray-500 hover:bg-gray-200'>
         < ChatBubbleLeftEllipsisIcon className='h-5 '/>
     </div>
-    <div className='h-7 w-7 rounded-full cursor-pointer  border border-gray-200 text-gray-500 hover:bg-gray-200'>
+    <Link href='/dashboard/notifications' className='h-7 w-7 rounded-full cursor-pointer  border border-gray-200 text-gray-500 hover:bg-gray-200'>
         < BellIcon/>
         <div className='absolute h-2 w-2 rounded-full bg-blue-600 -mt-7 ml-5'></div>
-    </div>
+    </Link>
+    
     <div className="relative inline-block text-left">
     
       <button
@@ -53,7 +54,7 @@ const TopHorizontalBar = () => {
           <div className="py-1">
             <div>
             <Link
-              href="/profile"
+              href="/dashboard/profile"
               className="flex gap-1 px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
             >
                  <UserCircleIcon className='h-5'/>

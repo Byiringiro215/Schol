@@ -16,8 +16,8 @@ const links: linkList[] = [
   { link: 'Dashboard', href: '/dashboard', icon: <LayoutDashboard />,isActive:true },
   { link: 'Students', href: '/dashboard/students', icon: <Users />,isActive:false },
   { link: 'Teachers', href: '/dashboard/teachers', icon: <UserCheck />,isActive:false },
-  { link: 'Payment', href: '#', icon: <CreditCard />,isActive:false },
-  { link: 'Courses', href: '#', icon: <BookOpen />,isActive:false },
+  { link: 'Payment', href: '/dashboard/payment', icon: <CreditCard />,isActive:false },
+  { link: 'Courses', href: '/dashboard/courses', icon: <BookOpen />,isActive:false },
   { link: 'Settings', href: '/dashboard/settings', icon: <Settings />,isActive:false },
 ]
 

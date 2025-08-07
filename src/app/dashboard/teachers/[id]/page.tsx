@@ -1,10 +1,10 @@
 'use client'
-import Filter_Searchbar from '@/DashboardComponents/Filter&Searchbar'
+import Filter_Searchbar from '@/components/Dashboard/Filter&Searchbar'
 import React, { useEffect } from 'react'
-import { useViewTeacherProfile } from '@/DashboardComponents/DashboardProviders/ViewTeacherProfileProvider'
+import { useViewTeacherProfile } from '@/LandingPageComponents/Providers/DashboardProviders/ViewTeacherProfileProvider'
 import { ArrowLeft, Phone } from 'lucide-react';
 import { AcademicCapIcon, EnvelopeIcon } from '@heroicons/react/24/solid';
-import { teacherslist } from '../Teacherslist';
+import { teacherslist } from '@/data/Teacherslist';
 import { useParams } from 'next/navigation';
 import Link from 'next/link';
 const page = () => {
